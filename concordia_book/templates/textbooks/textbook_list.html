@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Available Textbooks for {{ view.kwargs.course_code }}</h2>
+    {% if textbooks %}
+        <ul>
+        {% for textbook in textbooks %}
+            <li>
+                <strong>Title:</strong> {{ textbook.title }} <br>
+                <strong>Author:</strong> {{ textbook.author }} <br>
+                <strong>Edition:</strong> {{ textbook.edition|default:"N/A" }} <br>
+                <strong>Condition:</strong> {{ textbook.get_condition_display }}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No textbooks available for this course.</p>
+    {% endif %}
+{% endblock %}
