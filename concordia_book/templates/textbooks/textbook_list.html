@@ -10,6 +10,7 @@
                 <strong>Author:</strong> {{ textbook.author }} <br>
                 <strong>Edition:</strong> {{ textbook.edition|default:"N/A" }} <br>
                 <strong>Condition:</strong> {{ textbook.get_condition_display }}
+
             </li>
         {% endfor %}
         </ul>

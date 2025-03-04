@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Base Template{% endblock title %}</title>
     <style>
-        /* Internal CSS styles */
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,14 +14,14 @@
         }
 
         header {
-            background-color: #58b8b5;
+            background-color: #7a0606;
             color: #fff;
             padding: 1em 0;
             text-align: center;
         }
 
         footer {
-            background-color: #357ae8;
+            background-color: #e6ad1d;
             color: #ddd;
             padding: 0.5em 0;
             text-align: center;
@@ -37,7 +37,7 @@
 </head>
 <body>
 <header>
-    <h1>{% block header %}Welcome to the ConcordiaBook{% endblock header %}</h1>
+    <h1>{% block header %}ConcordiaBook{% endblock header %}</h1>
 </header>
 <div class="content">
     {% block content %}{% endblock content %}

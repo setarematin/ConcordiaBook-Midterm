@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +17,20 @@
             justify-content: center;
             height: 100vh;
         }
+
         h1 {
-            font-size: 48px;
-            color: #4285F4;
+            font-size: 40px;
+            color: #e6ad1d;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 40px;
+            color: #7a0606;
+            margin-bottom: 180px;
+        }
+        img {
+            width: 480px;
+            height: auto;
             margin-bottom: 20px;
         }
         form {
@@ -38,25 +50,27 @@
             text-align: center;
         }
         input:focus {
-            border-color: #4285F4;
+            border-color: #e6ad1d;
         }
         button {
             margin-top: 10px;
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #4285F4;
+            background-color: #e6ad1d;
             color: white;
             border: none;
             border-radius: 24px;
             cursor: pointer;
         }
         button:hover {
-            background-color: #357ae8;
+            background-color: #e6ad1d;
         }
     </style>
 </head>
 <body>
 
+    <img src="https://www.accueilplus.ca/wp-content/uploads/2020/08/Concordia-logo.jpeg" alt="Course Logo">
+    <h2>Welcome to Concordia Book</h2>
     <h1>Search Courses</h1>
     <form action="{% url 'redirect_to_textbook' %}" method="GET">
         <input type="text" name="course_code" placeholder="Enter course code..." required>
